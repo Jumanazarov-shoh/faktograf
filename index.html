@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FaktorGraf — EHF Ma’lumotlaridan Tushuntiriladigan Factoring Tahliligacha</title>
+  <meta name="description" content="O‘zbekiston banklari, factoring jamoalari va yetkazib beruvchilari uchun EHF ma’lumotlarini tahlil qiluvchi va ta’minot zanjiri bo‘yicha tushuntiriladigan dastlabki moliyalashtirish tahlilini taqdim etuvchi B2B SaaS platforma.">
+  
+  <!-- Preconnect & Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Qulaylik: Asosiy kontentga tezkor o'tish -->
+  <a href="#asosiy-kontent" class="skip-link">Asosiy kontentga o‘tish</a>
+
+  <!-- ==========================================================================
+       1. Header
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#hero" class="brand-wordmark" aria-label="FaktorGraf — Bosh sahifa">
+        <span>FaktorGraf</span>
+        <span class="brand-tag">B2B SaaS • Pilot</span>
+      </a>
+
+      <!-- Asosiy Navigatsiya -->
+      <nav class="nav-container" role="navigation" aria-label="Asosiy navigatsiya">
+        <ul class="nav-links">
+          <li><a href="#platforma" class="nav-link">Platforma</a></li>
+          <li><a href="#qanday-ishlaydi" class="nav-link">Qanday ishlaydi</a></li>
+          <li><a href="#kimlar-uchun" class="nav-link">Kimlar uchun</a></li>
+          <li><a href="#ishonchlilik" class="nav-link">Ishonchlilik</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Harakat tugmasi -->
+      <div class="header-actions">
+        <a href="#demo-sorov" class="btn btn-primary btn-sm">
+          Demo uchun uchrashuv belgilash
+        </a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Navigatsiya menyusini ochish" aria-expanded="false">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobil menyu -->
+    <div class="mobile-nav-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobil navigatsiya">
+      <ul class="mobile-nav-links">
+        <li><a href="#platforma" class="nav-link">Platforma</a></li>
+        <li><a href="#qanday-ishlaydi" class="nav-link">Qanday ishlaydi</a></li>
+        <li><a href="#kimlar-uchun" class="nav-link">Kimlar uchun</a></li>
+        <li><a href="#ishonchlilik" class="nav-link">Ishonchlilik va Nazorat</a></li>
+        <li><a href="#faq" class="nav-link">Ko‘p so‘raladigan savollar</a></li>
+      </ul>
+      <a href="#demo-sorov" class="btn btn-primary btn-block">
+        Demo uchun uchrashuv belgilash
+      </a>
+    </div>
+    <!-- Mobil menyu orqa fon pardasi -->
+    <div class="mobile-nav-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <!-- ==========================================================================
+       Asosiy Kontent
+       ========================================================================== -->
+  <main id="asosiy-kontent">
+
+    <!-- 2. Hero Bo'limi -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        
+        <div class="hero-editorial">
+          <div class="hero-meta-strip">
+            <span class="badge badge-synthetic">Sintetik demo namunasi</span>
+            <span class="mono" style="font-size: 0.76rem; color: var(--text-muted);">Lokal EHF pilot muhiti</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            EHF ma’lumotlaridan tushuntiriladigan factoring tahliligacha.
+          </h1>
+
+          <p class="hero-paragraph">
+            FaktorGraf — O‘zbekiston bizneslari uchun elektron hisob-fakturalarni (EHF) tahlil qilib, ta’minot zanjiri aloqalarini graf ko‘rinishida vizuallashtiruvchi, xatar signallarini ko‘rsatuvchi va factoring bo‘yicha tekshiriladigan dastlabki limit va narx hisob-kitoblarini taqdim etuvchi B2B SaaS platformasidir.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#demo-sorov" class="btn btn-primary btn-lg">
+              Demo so‘rash
+            </a>
+            <a href="#platforma" class="btn btn-secondary btn-lg">
+              Platformani ko‘rish
+            </a>
+          </div>
+        </div>
+
+        <!-- Credible Product Preview in Hero -->
+        <div class="product-preview-shell" role="region" aria-label="FaktorGraf dasturiy ta'minoti interfeysi namunasi">
+          <div class="preview-topbar">
+            <div class="preview-file-title">
+              <span class="badge badge-synthetic">Sintetik demo</span>
+              <span id="heroFileLabel">ehf_q3_2024_pilot.xlsx</span>
+              <span class="mono" id="heroFileStats" style="color: var(--text-muted); font-size: 0.74rem;">(42 ta invoice • 1.48 mlrd UZS)</span>
+            </div>
+            <div class="mono" style="font-size: 0.74rem; color: var(--accent-forest);">
+              Lokal demo tahlili
+            </div>
+          </div>
+
+          <div class="preview-grid">
+            <!-- Left Pane: Supplier-to-Buyer Graph -->
+            <div class="preview-graph-pane">
+              <div class="pane-label-row">
+                <span>Ta’minot zanjiri topologiyasi</span>
+                <span class="mono">Supplier → Buyers</span>
+              </div>
+              <div class="hero-graph-viewport" id="heroGraphViewport">
+                <!-- SVG Graph rendered via JS -->
+              </div>
+            </div>
+
+            <!-- Right Pane: Selected Invoice & Waterfall Preview -->
+            <div class="preview-data-pane">
+              <!-- Selected Invoice -->
+              <div class="preview-subpanel">
+                <div class="subpanel-heading">Tanlangan hisob-faktura (Invoice)</div>
+                <div class="preview-record-grid">
+                  <div>
+                    <div class="record-item-label">Invoice raqami</div>
+                    <div class="record-item-val mono" id="heroInvoiceId">EHF-2024-8841</div>
+                  </div>
+                  <div>
+                    <div class="record-item-label">Summa</div>
+                    <div class="record-item-val mono" id="heroInvoiceSum">125 000 000 UZS</div>
+                  </div>
+                  <div>
+                    <div class="record-item-label">Debitor (Xaridor)</div>
+                    <div class="record-item-val" id="heroInvoiceBuyer">Korzinka Tarmog‘i MChJ</div>
+                  </div>
+                  <div>
+                    <div class="record-item-label">To‘lov muddati</div>
+                    <div class="record-item-val mono" id="heroInvoiceDueDate">45 kun (DSO proxy: 38 kun)</div>
+                  </div>
+                </div>
+                <div style="margin-top: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+                  <span class="badge badge-status-eligible" id="heroInvoiceStatusBadge">Yaroqli (Eligible)</span>
+                  <span style="font-size: 0.74rem; color: var(--text-muted);" id="heroInvoiceCheckNote">Sintetik demo farazi: qabul dalolatnomasi bor deb hisoblangan (qarshi EHF yo‘q)</span>
+                </div>
+              </div>
+
+              <!-- Transparent Preliminary-Limit Breakdown -->
+              <div class="preview-subpanel">
+                <div class="subpanel-heading">Dastlabki limit hisob-kitobi (Waterfall)</div>
+                <div class="mini-waterfall" id="heroWaterfallContainer">
+                  <div class="mini-waterfall-row">
+                    <span style="color: var(--text-muted);">1. Jami tahlil qilingan EHF:</span>
+                    <span class="mono">1 480 000 000 UZS</span>
+                  </div>
+                  <div class="mini-waterfall-row">
+                    <span style="color: var(--text-muted);">2. Kechikayotgan fakturalar chegirishi:</span>
+                    <span class="mono" style="color: var(--status-flag-text);">-170 000 000 UZS</span>
+                  </div>
+                  <div class="mini-waterfall-row">
+                    <span style="color: var(--text-muted);">3. Debitor konsentratsiya filtri (maks. 50%):</span>
+                    <span class="mono" style="color: var(--status-review-text);">-360 000 000 UZS</span>
+                  </div>
+                  <div class="mini-waterfall-row">
+                    <span style="color: var(--text-muted);">4. Standart avans ulushi (80%):</span>
+                    <span class="mono">760 000 000 UZS</span>
+                  </div>
+                  <div class="mini-waterfall-row final">
+                    <span>Tavsiya etilgan dastlabki limit:</span>
+                    <span class="mono" style="font-size: 1rem;">760 000 000 UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Qanday Ishlaydi (How It Works: 3 Steps) -->
+    <section class="section" id="qanday-ishlaydi" aria-labelledby="steps-heading">
+      <div class="container">
+        <span class="section-kicker">Ish Jarayoni</span>
+        <h2 class="section-title" id="steps-heading">Uch bosqichda tushunarli anderrayting tahlili</h2>
+        <p class="section-lead">
+          FaktorGraf takrorlanuvchi hisob-faktura tahlili, tekshiruv signallari va anderrayting hisob-kitoblarini bitta qulay SaaS ish maydoniga birlashtiradi.
+        </p>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step-item">
+            <div class="step-num mono">01 / QADAM</div>
+            <h3 class="step-heading">EHF fayli modeli (Demo prototip)</h3>
+            <p class="step-body">
+              Platforma dizaynida CSV, JSON yoki XLSX formatidagi hisob-fakturalar ro‘yxatini yuklash ko‘zda tutilgan. Ushbu sahifada jarayon sintetik demo ssenariylari va interfeys prototipi orqali namoyish etilmoqda.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-item">
+            <div class="step-num mono">02 / QADAM</div>
+            <h3 class="step-heading">Ma’lumot sifati va signallarni ko‘rib chiqish</h3>
+            <p class="step-body">
+              Yetkazib beruvchi va xaridor o‘rtasidagi aloqalar grafigi chiziladi. Yopiq sikl, o‘zaro savdo (reciprocal trade) yoki konsentratsiya kabi tekshiruv signallari inson ko‘rigiga chiqariladi.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-item">
+            <div class="step-num mono">03 / QADAM</div>
+            <h3 class="step-heading">Yaroqlilik va dastlabki limitni o‘rganish</h3>
+            <p class="step-body">
+              Har bir hisob-fakturaning factoring uchun yaroqlilik holati, formulalarga asoslangan dastlabki limit va narxlash ssenariysi shaffof matematik qadamlar bilan tushuntiriladi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Platforma Imkoniyatlari (Product Capabilities) -->
+    <section class="section section-alt" id="platforma" aria-labelledby="capabilities-heading">
+      <div class="container">
+        <span class="section-kicker">Platforma Imkoniyatlari</span>
+        <h2 class="section-title" id="capabilities-heading">Qora qutisiz tahlil va anderrayting vositalari</h2>
+        <p class="section-lead">
+          FaktorGraf abstrakt sun’iy intellekt ballari o‘rniga, bank xodimi va yetkazib beruvchi bir xil tushunishi mumkin bo‘lgan aniq ishchi vositalarni taqdim etadi.
+        </p>
+
+        <!-- Ssenariy Tanlash (Dataset Switcher) with responsive class -->
+        <div class="case-switcher-panel">
+          <div style="font-size: 0.84rem; font-weight: 600;">
+            Sintetik demo ssenariysini tanlang:
+          </div>
+          <div class="case-buttons-group">
+            <button type="button" class="btn btn-primary btn-sm" id="btnCase1" data-case="case1">
+              #1: Agro-Sanoat MChJ (Barqaror zanjir)
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnCase2" data-case="case2">
+              #2: Tekstil Eksport (O‘zaro savdo va sikl signallari)
+            </button>
+          </div>
+        </div>
+
+        <div class="capabilities-stack">
+          
+          <!-- Cap Layout 1: Network Graph & Interactive Node Inspector -->
+          <div class="cap-split-block">
+            <div>
+              <div class="pane-label-row">
+                <span>Ta’minot zanjiri grafigi</span>
+                <span class="mono" style="font-size: 0.74rem;">Tugunni bosing</span>
+              </div>
+              <div class="interactive-graph-shell" id="showcaseGraphContainer">
+                <svg id="mainGraphSvg" width="100%" height="100%" viewBox="0 0 680 380">
+                  <!-- Rendered dynamically via JS -->
+                </svg>
+              </div>
+            </div>
+
+            <div class="cap-text-side">
+              <span class="badge badge-synthetic" style="margin-bottom: 8px;">Topologik Tahlil</span>
+              <h3>1. Ta’minot zanjiri grafigi va transaction signallari</h3>
+              <p>
+                Platforma EHF oqimlarini yo‘naltirilgan tarmoq ko‘rinishida aks ettiradi. Bu yerda yetkazib beruvchi va xaridor o‘rtasidagi savdo hajmi, ulushlar va o‘rtacha to‘lov davri darhol ko‘rinadi.
+              </p>
+
+              <!-- Node inspector display -->
+              <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 14px;">
+                <div style="font-size: 0.74rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;" class="mono">Tanlangan Kontragent</div>
+                <div style="font-weight: 700; font-size: 1.05rem;" id="inspectNodeName">Agro-Sanoat Ta'minot MChJ</div>
+                <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 10px;" id="inspectNodeRole">Bosh subyekt (Yetkazib beruvchi)</div>
+
+                <div class="record-item-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.82rem;">
+                  <div>
+                    <span style="color: var(--text-muted);">STIR:</span>
+                    <span class="mono" id="inspectNodeStir">301294821</span>
+                  </div>
+                  <div>
+                    <span style="color: var(--text-muted);">EHF Hajmi:</span>
+                    <span class="mono" id="inspectNodeVolume">1.48 mlrd UZS</span>
+                  </div>
+                  <div>
+                    <span style="color: var(--text-muted);">To‘lov intizomi:</span>
+                    <span class="mono" id="inspectNodeDSO">Standart</span>
+                  </div>
+                  <div>
+                    <span style="color: var(--text-muted);">Holati:</span>
+                    <span class="badge badge-status-eligible" id="inspectNodeStatus">Yaroqli</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); border-left: 2px solid var(--accent-forest); padding-left: 10px;">
+                <strong>Inson ko‘rigi eslatmasi:</strong> Aniqlangan yopiq sikl yoki o‘zaro savdo holatlari ayblov yoki firibgarlik (fraud) tasdig‘i emas, balki mutaxassis ko‘rishi kerak bo‘lgan tahliliy signallardir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Cap Layout 2: Invoice Eligibility Ledger -->
+          <div class="ledger-card">
+            <div class="ledger-header-bar">
+              <div>
+                <span class="badge badge-synthetic" style="margin-right: 6px;">Reyestr</span>
+                <strong style="font-size: 0.95rem;">2. Hisob-fakturalar yaroqliligi (Invoice Eligibility)</strong>
+              </div>
+              <div class="mono" style="font-size: 0.8rem; color: var(--text-muted);">
+                Har bir invoice bo‘yicha individual baholash
+              </div>
+            </div>
+
+            <div class="table-scroll-wrap">
+              <table class="ledger-table">
+                <thead>
+                  <tr>
+                    <th>Invoice ID</th>
+                    <th>Xaridor (Debitor)</th>
+                    <th>Summa</th>
+                    <th>Sana</th>
+                    <th>Holati</th>
+                    <th>Tekshiruv xulosasi va keyingi harakat</th>
+                  </tr>
+                </thead>
+                <tbody id="invoiceTableBody">
+                  <!-- Populated via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Cap Layout 3: Limit Waterfall & Risk Passport Side by Side -->
+          <div class="cap-two-col">
+            <!-- Explainable Limit Waterfall -->
+            <div class="structured-dossier">
+              <span class="badge badge-synthetic" style="margin-bottom: 8px;">Deduksiya zanjiri</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">3. Tushuntiriladigan dastlabki limit</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                Platforma boshlang‘ich EHF aylanmasidan qanday qilib taklif etilayotgan limitga kelinganini bosqichma-bosqich hisoblaydi va tushuntiradi.
+              </p>
+
+              <div id="waterfallContainer" style="display: flex; flex-direction: column; gap: 8px;">
+                <!-- Populated via JS -->
+              </div>
+
+              <!-- "Nega limit yuqoriroq emas?" -->
+              <div style="margin-top: 20px; padding: 14px; background: var(--bg-subtle); border-radius: var(--radius-xs); border: 1px solid var(--border-light);">
+                <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">
+                  Nega limit yuqoriroq emas?
+                </div>
+                <ul id="whyLimitNotHigherList" style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
+                  <!-- Populated via JS -->
+                </ul>
+              </div>
+            </div>
+
+            <!-- Risk Passport & Data Quality vs Coverage -->
+            <div class="structured-dossier">
+              <span class="badge badge-synthetic" style="margin-bottom: 8px;">Metodologik nazorat</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">4. Risk Pasporti: Sifat va Qamrov</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                Fayl formatining sintaktik to‘liqligi bilan tashqi manbalarning tasdiq qamrovi alohida baholanadi.
+              </p>
+
+              <div class="dossier-row">
+                <span class="dossier-label">Ma’lumot formati sifati:</span>
+                <span class="dossier-value mono" id="metricDataQuality">94% (Ustunlar to‘liq, STIR mavjud)</span>
+              </div>
+              <div class="dossier-row">
+                <span class="dossier-label">Mustaqil dalillar qamrovi:</span>
+                <span class="dossier-value mono" id="metricCoverage">78% (Lokal EHF mavjud, tashqi reyestr ulanmagan)</span>
+              </div>
+              <div class="dossier-row">
+                <span class="dossier-label">Xaridor konsentratsiyasi:</span>
+                <span class="dossier-value" id="metricConcentration">58% (Eng yirik debitor ulushi)</span>
+              </div>
+              <div class="dossier-row">
+                <span class="dossier-label">Kuzatilgan transaction signallari:</span>
+                <span class="dossier-value" id="metricPatterns">0 ta sikl, 1 ta o‘xshash dublikat</span>
+              </div>
+
+              <div style="margin-top: 18px; padding: 12px; background: #fffbeb; border: 1px solid #fef08a; border-radius: var(--radius-xs); font-size: 0.78rem; line-height: 1.5; color: #854d0e;">
+                <strong>Muhim qoida:</strong> Yetishmayotgan ma’lumot yoki tashqi reyestrning ulanmaganligi firibgarlik (fraud) tasdig‘i emas, balki tahlildagi noaniqlik (*uncertainty*) holatidir.
+              </div>
+            </div>
+          </div>
+
+          <!-- Cap Layout 4: Pricing Scenario Calculator Workbench -->
+          <div class="calc-workbench">
+            <div style="margin-bottom: 20px;">
+              <span class="badge badge-synthetic" style="margin-bottom: 6px;">Interaktiv Model</span>
+              <h3 style="font-size: 1.3rem;">5. Narxlash va Iqtisodiy Ssenariylar Kalkulyatori</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                Moliyalashtirish parametrlarini sozlang va yetkazib beruvchiga to‘lanadigan dastlabki sof mablag‘ hamda xarajatlarni ochiq formulalarda ko‘ring.
+              </p>
+            </div>
+
+            <div class="calc-workbench-grid">
+              <!-- Controls -->
+              <div>
+                <div class="calc-slider-group">
+                  <div class="slider-label-row">
+                    <span>1. Moliyalashtiriladigan invoice summasi:</span>
+                    <span class="mono" id="sliderValInvoice">250 000 000 UZS</span>
+                  </div>
+                  <input type="range" class="slider-track" id="sliderInvoice" min="20000000" max="1000000000" step="10000000" value="250000000" aria-label="Invoice summasi">
+                </div>
+
+                <div class="calc-slider-group">
+                  <div class="slider-label-row">
+                    <span>2. Avans koeffitsienti (Advance rate):</span>
+                    <span class="mono" id="sliderValAdvance">80 %</span>
+                  </div>
+                  <input type="range" class="slider-track" id="sliderAdvance" min="50" max="90" step="5" value="80" aria-label="Avans koeffitsienti">
+                </div>
+
+                <div class="calc-slider-group">
+                  <div class="slider-label-row">
+                    <span>3. To‘lov kutilayotgan muddat:</span>
+                    <span class="mono" id="sliderValDays">45 kun</span>
+                  </div>
+                  <input type="range" class="slider-track" id="sliderDays" min="15" max="120" step="5" value="45" aria-label="To‘lov muddati">
+                </div>
+
+                <div class="calc-slider-group">
+                  <div class="slider-label-row">
+                    <span>4. Yillik diskont stavkasi:</span>
+                    <span class="mono" id="sliderValRate">24 % (yillik)</span>
+                  </div>
+                  <input type="range" class="slider-track" id="sliderRate" min="16" max="36" step="1" value="24" aria-label="Yillik diskont stavkasi">
+                </div>
+              </div>
+
+              <!-- Calculation Results Sheet -->
+              <div class="calc-results-sheet">
+                <div style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px;" class="mono">Dastlabki Sof To‘lov</div>
+                <div class="payout-headline mono" id="calcNetPayout">194 075 342 UZS</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+                  Yetkazib beruvchining hisobiga darhol o‘tkaziladigan dastlabki mablag‘
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.84rem; border-top: 1px solid var(--border-light); padding-top: 12px; margin-bottom: 14px;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: var(--text-muted);">Ajratiladigan avans (80%):</span>
+                    <span class="mono" id="calcAdvanceAmount">200 000 000 UZS</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: var(--text-muted);">Ushlab qolinadigan rezerv (20%):</span>
+                    <span class="mono" id="calcReserveAmount">50 000 000 UZS</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: var(--text-muted);">Davr uchun diskont xarajati:</span>
+                    <span class="mono" id="calcFeeAmount" style="color: var(--status-review-text);">5 924 658 UZS</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: var(--text-muted);">Yilliklashtirilgan indikativ narx:</span>
+                    <span class="mono" id="calcAnnualizedRate" style="color: var(--accent-forest);">24.0% APR</span>
+                  </div>
+                </div>
+
+                <div style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); background: var(--bg-surface); border: 1px solid var(--border-light); padding: 8px; border-radius: var(--radius-xs);">
+                  Formulalar: Avans = Summa × Avans% | Rezerv = Summa - Avans | Diskont = Avans × (Yillik% ÷ 365) × Kunlar
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cap Layout 5: Network Stress Simulation & Decision Memo -->
+          <div class="cap-two-col">
+            <!-- Stress Scenario -->
+            <div class="structured-dossier">
+              <span class="badge badge-synthetic" style="margin-bottom: 8px;">Shok Simulyatsiyasi</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">6. Network Stress Ssenariysi</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                Tarmoqdagi asosiy xaridor to‘lovni kechiktirganda yoki to‘xtatganda ta’minot zanjiri likvidlik sig‘imini sinash.
+              </p>
+
+              <div style="display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;">
+                <button type="button" class="btn btn-secondary btn-sm active" id="btnStressBase" data-stress="base">Baza holati</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="btnStressDelay" data-stress="delay">+30 kun kechikish</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="btnStressExit" data-stress="exit">Debitor chiqishi</button>
+              </div>
+
+              <div class="stress-simulation-box">
+                <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 4px;" id="stressScenarioHeading">
+                  Baza holati: Standart to‘lov shartlari
+                </div>
+                <div style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 12px;" id="stressScenarioDetail">
+                  Xaridorlar to‘lov muddatlari shartnoma oralig‘ida (28-45 kun).
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; font-size: 0.86rem;">
+                  <span style="color: var(--text-muted);">Likvidlik sig‘imi (Capacity proxy):</span>
+                  <span class="mono" style="font-weight: 700; color: var(--accent-forest);" id="stressCapacityVal">100% (750M UZS)</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 14px; font-size: 0.74rem; color: var(--text-muted); line-height: 1.4;">
+                * EHF aylanmasi factoring sig‘imi uchun proksi hisoblanadi. Natija real defolt ehtimoli prognozi emas.
+              </div>
+            </div>
+
+            <!-- Decision Memo -->
+            <div class="structured-dossier">
+              <span class="badge badge-synthetic" style="margin-bottom: 8px;">Audit Hujjati</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">7. Decision Memo va Audit Izi</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
+                Tahlil qaysi fayllar, hisoblash qoidalari va lokal reviewer yozuvlariga tayanganini ko‘rsatuvchi rasmiy xulosa.
+              </p>
+
+              <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-xs); padding: 14px; font-size: 0.84rem; display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-muted);">Memorandum ID:</span>
+                  <span class="mono">MEMO-2024-098-PILOT</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-muted);">Tahlil qilingan subyekt:</span>
+                  <span id="memoSubyekt">Agro-Sanoat Ta'minot MChJ</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-muted);">Tavsiya dastlabki limiti:</span>
+                  <span class="mono" style="font-weight: 700; color: var(--accent-forest);" id="memoLimitVal">750 000 000 UZS</span>
+                </div>
+                <div>
+                  <span style="color: var(--text-muted); display: block; margin-bottom: 4px;">Reviewer xulosasi:</span>
+                  <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;" id="memoReviewerNote">
+                    Barcha munosabatlar bir tomonlama. Eng yirik debitor ulushi 58% bo‘lgani sababli bitta xaridor konsentratsiya cheklovi qo‘llanildi.
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 14px; font-size: 0.74rem; color: var(--text-muted);">
+                * Demo memorandumlari banklarga yuborilmaydi; ular faqat lokal ko‘rik uchun shakllantiriladi.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Kimlar Uchun (Who It Serves) -->
+    <section class="section" id="kimlar-uchun" aria-labelledby="audience-heading">
+      <div class="container">
+        <span class="section-kicker">Auditoriya</span>
+        <h2 class="section-title" id="audience-heading">Ikkita asosiy auditoriya uchun aniq qiymat</h2>
+        <p class="section-lead">
+          FaktorGraf kreditni tasdiqlamaydi yoki moliyalashtirishni kafolatlamaydi. U tomonlarga bir xil tahliliy ma’lumotlar asosida ishlash imkonini beradi.
+        </p>
+
+        <div class="audience-grid">
+          <!-- Group 1: Banks & Factoring -->
+          <div class="audience-card">
+            <span class="audience-role-tag">Banklar va Factoring Tashkilotlari</span>
+            <h3 class="audience-title">Anderrayter, risk jamoalari va auditorlar uchun</h3>
+            <p class="audience-desc">
+              Kredit arizalarini ko‘rib chiqishda tarqoq jadvallar o‘rniga, ta’minot zanjiri aloqalari va hisoblash mantiqini yagona ishchi muhitda tahlil qiling.
+            </p>
+            <ul class="audience-workflow-list">
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Qora qutisiz limit tahlili:</strong> Limitning har bir chegirish sababi va konsentratsiya normasi ochiq ko‘rsatiladi.</span>
+              </li>
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>O‘zaro savdo (Reciprocal) signallari:</strong> Yetkazib beruvchi va xaridor bir-biriga qarshi hisob-faktura yozgan holatlarni darhol aniqlash.</span>
+              </li>
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Auditga tayyor xulosa:</strong> Manbalar, qoidalar va sanalar qayd etilgan Decision Memo bilan ishlash.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Group 2: Suppliers & SMEs -->
+          <div class="audience-card">
+            <span class="audience-role-tag">Yetkazib Beruvchilar va KO‘B</span>
+            <h3 class="audience-title">Factoring imkoniyatini baholamoqchi bo‘lgan bizneslar uchun</h3>
+            <p class="audience-desc">
+              Bankka ariza berishdan oldin o‘z EHF portfelingizni tekshiring, qaysi hisob-fakturalar yaroqli ekanini va qanday moliyalashtirish shartlari kutilayotganini tushuning.
+            </p>
+            <ul class="audience-workflow-list">
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Yaroqlilikni oldindan bilish:</strong> Qaysi fakturalarda to‘lov muddati yoki ma’lumot yetishmasligi borligini aniqlash.</span>
+              </li>
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Shaffof iqtisodiy kalkulyator:</strong> Avans, ushlab qolinadigan rezerv va davr xarajatlarini oldindan hisoblash.</span>
+              </li>
+              <li class="audience-workflow-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Xavfsiz dastlabki baholash:</strong> Ma’lumotlar lokal ko‘rikda qoladi, tashqi kredit reytingiga ta’sir qilmaydi.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Ishonchlilik va Nazorat (Trust and Explainability) -->
+    <section class="section section-alt" id="ishonchlilik" aria-labelledby="trust-heading">
+      <div class="container">
+        <span class="section-kicker">Mas’uliyat va Chegaralar</span>
+        <h2 class="section-title" id="trust-heading">Shaffoflik tamoyillari va integratsiya holati</h2>
+        <p class="section-lead">
+          FaktorGraf hozirgi bosqichda lokal EHF tahlili vositasi sifatida taqdim etiladi. Biz mavjud bo‘lmagan tashqi ulanishlar yoki tasdiqlanmagan kredit kafolatlarini va’da qilmaymiz.
+        </p>
+
+        <!-- Principles Grid -->
+        <div class="trust-principles-grid">
+          <div class="trust-item-card">
+            <h4>Dastlabki skrining, kredit qarori emas</h4>
+            <p>
+              EHF tahlili yakuniy kredit qarori emas. Chiqarilgan limit va narxlash ko‘rsatkichlari faqat ichki anderrayting siyosati bilan kalibrlanishi kerak bo‘lgan dastlabki hisob-kitoblardir.
+            </p>
+          </div>
+
+          <div class="trust-item-card">
+            <h4>Signallar firibgarlik tasdig‘i emas</h4>
+            <p>
+              Shubhali transaction patternlar (yopiq sikl, o‘zaro savdo) inson ko‘rigi uchun tahliliy signallardir. Ular firibgarlik (fraud) tasdig‘i hisoblanmaydi.
+            </p>
+          </div>
+
+          <div class="trust-item-card">
+            <h4>Noaniqlik va qamrov farqi</h4>
+            <p>
+              Fayl formati sifati bilan tashqi mustaqil dalillar qamrovi alohida o‘lchanadi. Yetishmayotgan ma’lumot noaniqlik (*uncertainty*) hisoblanadi, qoidabuzarlik emas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Explicit Integrations Table -->
+        <div class="integrations-matrix-wrap">
+          <div class="integrations-matrix-header">
+            Tashqi tizimlar va integratsiyalar holati (Pilot statusi)
+          </div>
+          <div class="table-scroll-wrap">
+            <table class="integrations-table">
+              <thead>
+                <tr>
+                  <th>Xizmat / Tizim</th>
+                  <th>Amaldagi holati</th>
+                  <th>Tahlildagi o‘rni va izoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Lokal EHF fayllari (CSV, JSON, XLSX)</strong></td>
+                  <td><span class="badge badge-unconnected">Demo prototipi (Sintetik namoyish)</span></td>
+                  <td>Hozirgi veb-sahifada fayl yuklash emas, balki sintetik ma’lumotlar asosidagi tahlil prototipi va interfeys konsepti namoyish etilmoqda.</td>
+                </tr>
+                <tr>
+                  <td><strong>ETTYX (Elektron tovar-transport yuk xatlari)</strong></td>
+                  <td><span class="badge badge-unconnected">Ulanmagan</span></td>
+                  <td>Yuk xatlari bilan avtomatlashtirilgan to‘g‘ridan-to‘g‘ri sinxronizatsiya ulanmagan; tovar yetkazilishi alohida tekshiriladi.</td>
+                </tr>
+                <tr>
+                  <td><strong>Bank tranzaksiya ma’lumotlari</strong></td>
+                  <td><span class="badge badge-unconnected">Ulanmagan</span></td>
+                  <td>Bank hisobraqamlari ko‘chirmalari integratsiyasi mavjud emas. To‘lov intizomi faqat EHF muddatlariga tayanadi.</td>
+                </tr>
+                <tr>
+                  <td><strong>Soliq va korxonalar davlat reyestrlari</strong></td>
+                  <td><span class="badge badge-unconnected">Ulanmagan</span></td>
+                  <td>Mustaqil yuridik yoki soliq tasdiqlari ulanmagan; tahlil faqat fayldagi ma’lumotlar bilan cheklangan.</td>
+                </tr>
+                <tr>
+                  <td><strong>Elektron raqamli imzo (E-imzo)</strong></td>
+                  <td><span class="badge badge-unconnected">Ulanmagan</span></td>
+                  <td>Platforma orqali rasmiy shartnoma imzolash yoki E-imzo tekshiruvi amalga oshirilmaydi.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ (Ko'p so'raladigan savollar) -->
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <span class="section-kicker">Savol-Javoblar</span>
+        <h2 class="section-title" id="faq-heading">Ko‘p so‘raladigan savollar</h2>
+        <p class="section-lead">
+          FaktorGraf tahlil uslubi, qabul qilinadigan fayllar va hisoblash chegaralari haqida asosiy ma’lumotlar.
+        </p>
+
+        <div class="faq-wrap">
+          <!-- Q1 -->
+          <div class="faq-entry">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Platformaga qanday fayllarni yuklash mumkin?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-body">
+              FaktorGraf CSV, JSON va XLSX formatidagi elektron hisob-faktura (EHF) eksport fayllarini qabul qiladi. Fayllarda yetkazib beruvchi va xaridor STIR raqamlari, invoice seriya va raqamlari, sana, summa hamda to‘lov holati ustunlari bo‘lishi lozim.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-entry">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Tahlil nimalarni ko‘rsatadi va qanday natija beradi?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-body">
+              Platforma yetkazib beruvchi va xaridorlar o‘rtasidagi ta’minot zanjiri grafigini tuzadi, yopiq sikl yoki o‘zaro savdo (reciprocal trade) kabi tekshiruv signallarini aniqlaydi, har bir invoice’ning yaroqliligini baholaydi hamda bosqichma-bosqich hisoblangan dastlabki limit va Decision Memo’ni taqdim etadi.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-entry">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Dastlabki limit yakuniy moliyalashtirish taklifimi?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-body">
+              Yo‘q. FaktorGraf chiqaradigan limit faqat anderrayting uchun dastlabki tahliliy ssenariydir. U tasdiqlangan kredit limiti yoki qat’iy majburiyat emas. Yakuniy moliyalashtirish qarori bank yoki factoring tashkiloti tomonidan qabul qilinadi.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-entry">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Shubhali transaction patternlar firibgarlikni tasdiqlaydimi?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-body">
+              Yo‘q. Pattern signallari faqat inson ko‘rigi talab qilinishini anglatadi. Masalan, o‘zaro savdo ikki korxona bir-biridan xomashyo va tayyor mahsulot sotib oladigan tabiiy amaliyot bo‘lishi mumkin, ammo factoringda bu o‘zaro hisob-kitob (vzaimozachot) xavfini keltirib chiqarishi sababli qo‘shimcha tekshiruvni talab qiladi.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-entry">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Hozirda qaysi tashqi integratsiyalar ulangan?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-body">
+              Hozirgi bosqichda platforma lokal EHF pilot rejimida ishlaydi. ETTYX, soliq organlari, bank tizimlari yoki elektron raqamli imzo (E-imzo) tashqi tizimlari ulanmagan deb belgilangan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Demo Request (Demo So'rov Bo'limi) -->
+    <section class="section section-alt" id="demo-sorov" aria-labelledby="demo-heading">
+      <div class="container">
+        <div class="demo-section-grid">
+          <div>
+            <span class="section-kicker">Pilot Ko‘rik</span>
+            <h2 class="section-title" id="demo-heading">FaktorGraf’ni demo rejimida ko‘rib chiqing.</h2>
+            <p class="section-lead" style="margin-bottom: 20px;">
+              Tashkilotingizning anderrayting jarayoni yoki EHF ma’lumotlariga moslashtirilgan pilot namoyishini birgalikda o‘tkazamiz.
+            </p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+              Uchrashuv davomida ta’minot zanjiri grafigi qanday chizilishi, qaysi qoidalar bilan transaction patternlari aniqlanishi va limit formulalari sizning anderrayting siyosatingizga qanday kalibrlanishini ko‘rib chiqamiz.
+            </p>
+          </div>
+
+          <!-- Demo Request Form -->
+          <div class="demo-form-card">
+            <div class="form-disclaimer-box">
+              <strong>Shaffof bildirishnoma:</strong> Ushbu forma hozirda front-end demo holatida ishlaydi. Ma’lumotlar tashqi serverga yuborilmaydi; formani yuborish orqali siz yaratilgan ma’lumotlar tuzilmasini ko‘rishingiz mumkin.
+            </div>
+
+            <form id="demoForm" novalidate>
+              <div class="form-field">
+                <label for="fullName" class="form-label">Ism va familiya *</label>
+                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Masalan: Jamshid Karimov" required aria-describedby="errFullName">
+                <div class="field-error-text" id="errFullName">Iltimos, ism va familiyangizni kiriting.</div>
+              </div>
+
+              <div class="form-field">
+                <label for="company" class="form-label">Kompaniya yoki tashkilot nomi *</label>
+                <input type="text" id="company" name="company" class="form-input" placeholder="Masalan: Silk Road Factoring MChJ" required aria-describedby="errCompany">
+                <div class="field-error-text" id="errCompany">Iltimos, tashkilot nomini kiriting.</div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div class="form-field">
+                  <label for="email" class="form-label">Ishchi email *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="nom@kompaniya.uz" required aria-describedby="errEmail">
+                  <div class="field-error-text" id="errEmail">Iltimos, to‘g‘ri ishchi email manzilini kiriting (masalan: ism@kompaniya.uz).</div>
+                </div>
+                <div class="form-field">
+                  <label for="role" class="form-label">Lavozim yoki jamoa *</label>
+                  <input type="text" id="role" name="role" class="form-input" placeholder="Bosh anderrayter" required aria-describedby="errRole">
+                  <div class="field-error-text" id="errRole">Iltimos, lavozimingiz yoki jamoangizni ko‘rsating.</div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="interest" class="form-label">Qiziqtirgan yo‘nalish *</label>
+                <select id="interest" name="interest" class="form-select" required aria-describedby="errInterest">
+                  <option value="" disabled selected>Yo‘nalishni tanlang...</option>
+                  <option value="bank">Bank / Factoring tashkiloti (Anderrayting & Risk)</option>
+                  <option value="supplier">Yetkazib beruvchi / KO‘B (Factoring imkoniyatlari)</option>
+                  <option value="partner">Hamkorlik / Fintex integratsiyasi</option>
+                  <option value="other">Boshqa yo‘nalish</option>
+                </select>
+                <div class="field-error-text" id="errInterest">Iltimos, yo‘nalishni tanlang.</div>
+              </div>
+
+              <div class="form-field">
+                <label for="message" class="form-label">Qisqa xabar yoki asosiy ehtiyojingiz (ixtiyoriy)</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Masalan: Oyiga 1000 ta EHF tahlili va o‘zaro savdo signallarini sinab ko‘rmoqchimiz..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitDemo">
+                Demo so‘rov namunasini shakllantirish
+              </button>
+            </form>
+
+            <!-- Front-end payload output preview -->
+            <div class="demo-output-payload" id="demoOutputPayload">
+              <div style="font-weight: 700; color: var(--accent-forest); margin-bottom: 4px;">
+                Front-end forma namunasi shakllantirildi (Backend ulanmagan)
+              </div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary);">
+                Ushbu namoyish shaklida server yoki CRM ulanmagan. Ma’lumotlar yuborilmadi. Quyida tizim integratsiyasida qabul qilinadigan ma’lumotlar strukturasining ko‘rinishi keltirilgan:
+              </p>
+              <pre class="payload-json" id="payloadJson"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-side">
+          <div class="brand-wordmark">
+            <span>FaktorGraf</span>
+            <span class="brand-tag">B2B SaaS</span>
+          </div>
+          <p>
+            O‘zbekiston bizneslari uchun EHF ma’lumotlarini tahlil qiluvchi va ta’minot zanjiri bo‘yicha tushuntiriladigan dastlabki factoring tahlilini ko‘rsatuvchi B2B SaaS platforma.
+          </p>
+        </div>
+
+        <div class="footer-contact-block">
+          <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Aloqa va Pilot ma’lumotlari</div>
+          <div class="footer-contact-item">
+            Aloqa liniyasi: <span class="placeholder-note">Pilot ko‘rik rejimida; aloqa kanallari ulanmagan</span>
+          </div>
+          <div class="footer-contact-item">
+            Namuna email: info@faktograf.uz <span class="placeholder-note">(namuna placeholder, xat qabul qilinmaydi)</span>
+          </div>
+          <div class="footer-contact-item">
+            Namuna telefon: +998 (71) 000-00-00 <span class="placeholder-note">(namuna placeholder)</span>
+          </div>
+          <div class="footer-contact-item">
+            Manzil: Toshkent sh., O‘zbekiston
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 FaktorGraf. Barcha huquqlar himoyalangan.
+        </div>
+        <div style="max-width: 650px; text-align: right; font-size: 0.76rem; color: var(--text-muted);" class="footer-legal-text">
+          <strong>Huquqiy eslatma:</strong> FaktorGraf — tahlil va ta’minot zanjiri vizualizatsiyasi dasturiy vositasidir. U bank yoki kredit tashkiloti emas va mustaqil kredit yoki factoring xizmatlarini ko‘rsatmaydi.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/synthetic-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
